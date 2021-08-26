@@ -13,23 +13,23 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_ACCESS_TOKEN }}
-          repository: timche/csgo
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          repository: remidiniz/csgo
           tags: latest,${{ github.event.release.tag_name }}
           path: ./base
       - name: sourcemod
         uses: docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_ACCESS_TOKEN }}
-          repository: timche/csgo
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          repository: remidiniz/csgo
           tags: sourcemod,sourcemod-${{ github.event.release.tag_name }}
           path: ./sourcemod
       - name: pug-practice
         uses: docker/build-push-action@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_ACCESS_TOKEN }}
-          repository: timche/csgo
+          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          repository: remidiniz/csgo
           tags: pug-practice,pug-practice-${{ github.event.release.tag_name }}
           path: ./pug-practice
