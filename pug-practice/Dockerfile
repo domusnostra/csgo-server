@@ -1,4 +1,4 @@
-FROM timche/csgo:sourcemod
+FROM remidiniz/csgo-server:sourcemod
 
 WORKDIR /home/csgo
 

@@ -1,4 +1,4 @@
-FROM timche/csgo
+FROM remidiniz/csgo-server
 
 USER root
 
