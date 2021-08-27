@@ -7,6 +7,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     ca-certificates=20200601~deb10u2 \
+    iputils-ping \
     apt-utils \
     aptitude \ 
     lib32gcc1=1:8.3.0-6 \
